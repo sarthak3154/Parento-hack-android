@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Stelle</string>
+    <string name="string_app_name">Stelle</string>
+    <string name="string_login_with_facebook">Login with Facebook</string>
+    <string name="string_app_snippet">A step towards Quality Education</string>
+
+    <string-array name="string_array_fb_permissions">
+        <item>public_profile</item>
+        <item>email</item>
+    </string-array>
+
+    <string name="facebook_app_id">1906502882897153</string>
+    <string name="string_error_facebook_login_cancelled">Login through Facebook to continue</string>
+    <string name="string_error_facebook_login">Not able to login through Facebook, Please try again</string>
+    <string name="string_error_no_network">Network not available</string>
+    <string name="string_error_graph_api_failed">Not able to fetch data from Facebook, Please try again</string>
+    <string name="string_error_something_went_wrong">Something went wrong</string>
+    <string name="string_people_nearby">School at your Reach</string>
+    <string name="string_show_location">Turn on High Accuracy under Location Settings</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

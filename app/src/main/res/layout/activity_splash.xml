@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_splash"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    tools:context="com.stelle.stelleapp.getstarted.activities.SplashActivity">
+
+    <LinearLayout
+        android:id="@+id/stripeView"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_4dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/drawable_splash_stripe"
+        android:orientation="horizontal" />
+
+    <LinearLayout
+        android:id="@+id/linearBelowStripe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/stripeView"
+        android:layout_marginLeft="@dimen/dimen_50dp"
+        android:layout_marginStart="@dimen/dimen_50dp"
+        android:layout_marginTop="@dimen/dimen_10dp"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_3dp"
+            android:background="@drawable/drawable_splash_stripe" />
+
+    </LinearLayout>
+
+    <com.stelle.stelleapp.widgets.AppTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/linearBelowStripe"
+        android:layout_marginEnd="@dimen/dimen_20dp"
+        android:layout_marginRight="@dimen/dimen_20dp"
+        android:layout_marginTop="@dimen/dimen_10dp"
+        android:text="@string/string_app_snippet"
+        android:textColor="@color/color_white"
+        android:textSize="@dimen/dimen_16sp"
+        app:textStyle="@integer/OPEN_SANS_REGULAR" />
+
+
+    <com.stelle.stelleapp.widgets.AppTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/stripeView"
+        android:layout_marginBottom="@dimen/dimen_below_10_dp"
+        android:layout_marginLeft="@dimen/dimen_20dp"
+        android:layout_marginStart="@dimen/dimen_20dp"
+        android:text="@string/string_app_name"
+        android:textColor="@color/color_white"
+        android:textSize="40sp"
+        app:textStyle="@integer/OPEN_SANS_REGULAR" />
+
+    <LinearLayout
+        android:id="@+id/transitions_container"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/dimen_30dp"
+        android:layout_marginLeft="@dimen/dimen_20dp"
+        android:layout_marginRight="@dimen/dimen_20dp">
+
+        <LinearLayout
+            android:id="@+id/linearLayoutFacebook"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_60dp"
+            android:background="@drawable/drawable_facebook_button"
+            android:clickable="true"
+            android:orientation="vertical"
+            android:visibility="invisible"
+            tools:visibility="visible">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:drawableLeft="@drawable/ic_facebook"
+                android:drawablePadding="@dimen/dimen_15dp"
+                android:drawableStart="@drawable/ic_facebook"
+                android:gravity="center"
+                android:maxLines="1"
+                android:text="@string/string_login_with_facebook"
+                android:textColor="@color/color_white"
+                android:textSize="@dimen/dimen_17sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <include
+        layout="@layout/layout_progress_bar_full_screen"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:visibility="gone"
+        tools:visibility="visible" />
+
+</RelativeLayout>

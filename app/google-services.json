@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "904125883303",
+    "firebase_url": "https://stelle-945c5.firebaseio.com",
+    "project_id": "stelle-945c5",
+    "storage_bucket": "stelle-945c5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:904125883303:android:87cd8acd8ce28d0b",
+        "android_client_info": {
+          "package_name": "com.stelle.stelleapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "904125883303-r6htbfjh2ae2bn41h9287o9ub3k5gfeu.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.stelle.stelleapp",
+            "certificate_hash": "f6e8153bb90df08e44de9a13c76041e3a1326779"
+          }
+        },
+        {
+          "client_id": "904125883303-nh8i1vmh3vmc27pmc3fprdhp424me043.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC8nPVTyjC-Lu0XOwW_sbL8p4llrfPYVG8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "904125883303-nh8i1vmh3vmc27pmc3fprdhp424me043.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
