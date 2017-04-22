@@ -17,7 +17,21 @@
     <string name="string_error_something_went_wrong">Something went wrong</string>
     <string name="string_people_nearby">School at your Reach</string>
     <string name="string_show_location">Turn on High Accuracy under Location Settings</string>
+    <string name="string_spinner_title">Choose your Role</string>
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="string_parent_teacher">Are you a Parent or a Teacher?</string>
+    <string name="string_how_ahead">How do you wish to go ahead?</string>
+    <string name="string_child_name">Child Name</string>
+    <string name="string_standard">Standard</string>
+    <string name="string_section">Section</string>
+    <string name="string_subject_name">Subject Name</string>
+    <string name="string_complete_profile">Complete Profile</string>
+    <string name="string_add_comment">Just type in..</string>
+    <string name="string_send">Send</string>
+    <string name="string_chat">Hope you have a Good Time</string>
+    <string name="string_user">Sarthak Arora</string>
+    <string name="string_enter_details">Please Enter Details</string>
+    <string name="string_chat_btn">Chat</string>
 </resources>

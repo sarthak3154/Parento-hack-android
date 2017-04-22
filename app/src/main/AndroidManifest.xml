@@ -50,8 +50,22 @@
             android:name="com.google.android.geo.API_KEY"
             android:value="AIzaSyAleIi4FD_0C7Ad9a7QufldDh38hKa9FZA" />
 
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
         <activity
             android:name=".homescreen.activities.HomeScreenActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+
+        <activity
+            android:name=".getstarted.activities.CompleteProfileActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+
+        <activity
+            android:name=".homescreen.activities.ChatScreenActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme" />
 

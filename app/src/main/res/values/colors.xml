@@ -11,4 +11,7 @@
     <color name="color_bottom_navbar_background">#F7F7F7</color>
     <color name="color_circle_border">#C7C7CC</color>
     <color name="color_grey">#c5c5c5</color>
+    <color name="color_grey_dark">#e0e0e0</color>
+    <color name="transparent">#00000000</color>
+    <color name="color_grey_other">#82000000</color>
 </resources>

@@ -32,4 +32,6 @@
     <dimen name="dimen_0.5dp">0.5dp</dimen>
     <dimen name="dimen_19sp">19sp</dimen>
     <dimen name="dimen_35dp">35dp</dimen>
+    <dimen name="dimen_5dp">5dp</dimen>
+    <dimen name="dimen_72dp">72dp</dimen>
 </resources>

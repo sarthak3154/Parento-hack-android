@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.stelle.stelleapp.widgets.AppTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_margin="@dimen/dimen_20dp"
+        android:gravity="center"
+        android:text="@string/string_how_ahead"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="24sp"
+        app:textStyle="@integer/OPEN_SANS_REGULAR" />
+
+
+    <com.stelle.stelleapp.widgets.AppTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="@dimen/dimen_20dp"
+        android:layout_marginLeft="@dimen/dimen_20dp"
+        android:layout_marginRight="@dimen/dimen_20dp"
+        android:gravity="center"
+        android:text="@string/string_parent_teacher"
+        android:textColor="@color/colorPrimary"
+        android:textSize="20sp"
+        app:textStyle="@integer/OPEN_SANS_REGULAR" />
+
+    <Spinner
+        android:id="@+id/select_category"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_40dp"
+        android:layout_marginLeft="@dimen/dimen_20dp"
+        android:layout_marginRight="@dimen/dimen_20dp"
+        android:accessibilityLiveRegion="assertive"
+        android:background="@drawable/bg_edit_text_dark"
+        android:padding="@dimen/dimen_10dp"
+        android:prompt="@string/string_spinner_title"
+        android:textColor="@color/colorPrimary" />
+
+    <Spinner
+        android:id="@+id/selectSchool"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_40dp"
+        android:layout_marginLeft="@dimen/dimen_20dp"
+        android:layout_marginRight="@dimen/dimen_20dp"
+        android:layout_marginTop="@dimen/dimen_10dp"
+        android:accessibilityLiveRegion="assertive"
+        android:background="@drawable/bg_edit_text_dark"
+        android:padding="@dimen/dimen_10dp"
+        android:prompt="@string/string_spinner_title"
+        android:textColor="@color/colorPrimary" />
+
+    <EditText
+        android:id="@+id/childName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dimen_20dp"
+        android:layout_marginRight="@dimen/dimen_20dp"
+        android:layout_marginTop="@dimen/dimen_10dp"
+        android:background="@drawable/bg_edit_text_dark"
+        android:cursorVisible="true"
+        android:hint="@string/string_child_name"
+        android:padding="@dimen/dimen_10dp"
+        android:textCursorDrawable="@drawable/cursor_drawable"
+        android:visibility="visible" />
+
+    <EditText
+        android:id="@+id/classStd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dimen_20dp"
+        android:layout_marginRight="@dimen/dimen_20dp"
+        android:layout_marginTop="@dimen/dimen_10dp"
+        android:background="@drawable/bg_edit_text_dark"
+        android:cursorVisible="true"
+        android:hint="@string/string_standard"
+        android:padding="@dimen/dimen_10dp"
+        android:textCursorDrawable="@drawable/cursor_drawable"
+        android:visibility="visible" />
+
+    <EditText
+        android:id="@+id/classSection"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dimen_20dp"
+        android:layout_marginRight="@dimen/dimen_20dp"
+        android:layout_marginTop="@dimen/dimen_10dp"
+        android:background="@drawable/bg_edit_text_dark"
+        android:cursorVisible="true"
+        android:hint="@string/string_section"
+        android:padding="@dimen/dimen_10dp"
+        android:textCursorDrawable="@drawable/cursor_drawable"
+        android:visibility="visible" />
+
+    <EditText
+        android:id="@+id/subjectName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dimen_20dp"
+        android:layout_marginRight="@dimen/dimen_20dp"
+        android:layout_marginTop="@dimen/dimen_10dp"
+        android:background="@drawable/bg_edit_text_dark"
+        android:cursorVisible="true"
+        android:hint="@string/string_subject_name"
+        android:padding="@dimen/dimen_10dp"
+        android:textCursorDrawable="@drawable/cursor_drawable"
+        android:visibility="visible" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_0dp"
+        android:layout_weight="1" />
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/btn_done"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_50dp"
+        android:background="@color/colorPrimaryDark"
+        android:enabled="true"
+        android:fontFamily="sans-serif"
+        android:padding="15dp"
+        android:text="@string/string_complete_profile"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+</LinearLayout>

@@ -6,7 +6,7 @@ import android.os.Parcelable;
 import com.stelle.stelleapp.homescreen.parsers.UsersMapResponseParser;
 
 /**
- * Created by Sarthak on 14-04-2017
+ * Created by Sarthak on 22-04-2017
  */
 
 public class FeaturedUsersModel implements Parcelable {

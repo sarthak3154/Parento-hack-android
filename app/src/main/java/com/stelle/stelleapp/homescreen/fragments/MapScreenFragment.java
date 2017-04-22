@@ -2,6 +2,7 @@ package com.stelle.stelleapp.homescreen.fragments;
 
 import android.Manifest;
 import android.content.Context;
+import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
@@ -10,6 +11,7 @@ import android.support.annotation.Nullable;
 import android.support.v4.app.ActivityCompat;
 import android.support.v4.app.Fragment;
 import android.support.v4.view.ViewPager;
+import android.support.v7.widget.AppCompatButton;
 import android.text.TextUtils;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -35,6 +37,7 @@ import com.stelle.stelleapp.BaseActivity;
 import com.stelle.stelleapp.R;
 import com.stelle.stelleapp.dbmodels.UserPreferencesData;
 import com.stelle.stelleapp.dbmodels.UserProfileData;
+import com.stelle.stelleapp.homescreen.activities.ChatScreenActivity;
 import com.stelle.stelleapp.homescreen.interfaces.MapScreenContract;
 import com.stelle.stelleapp.homescreen.models.FeaturedUsersModel;
 import com.stelle.stelleapp.homescreen.parsers.UsersMapResponseParser;
@@ -73,6 +76,8 @@ public class MapScreenFragment extends Fragment implements MapScreenContract.Vie
     MapView mMapView;
     @Bind(R.id.textDispName)
     AppTextView dispName;
+    @Bind(R.id.btnChat)
+    AppCompatButton btnChat;
 
     private Boolean isNight;
     private GoogleMap googleMap;
@@ -173,7 +178,15 @@ public class MapScreenFragment extends Fragment implements MapScreenContract.Vie
         final String position = marker.getSnippet();
         String name = usersModels.get(Integer.parseInt(position)).getName();
         dispName.setText(name);
+        btnChat.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(getActivity(), ChatScreenActivity.class);
+                startActivity(i);
+            }
+        });
         return true;
+
     }
 
     @Override
@@ -203,5 +216,6 @@ public class MapScreenFragment extends Fragment implements MapScreenContract.Vie
         }
 
     }
+
 
 }

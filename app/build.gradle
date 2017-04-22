@@ -61,6 +61,9 @@ dependencies {
     compile 'io.reactivex:rxandroid:1.2.1'
     compile 'com.android.support:multidex:1.0.1'
     compile 'com.facebook.android:facebook-android-sdk:4.9.0'
+    compile 'com.google.firebase:firebase-database:10.2.1'
+    //Firebase UI
+    compile 'com.firebaseui:firebase-ui-database:1.2.0'
     compile 'com.google.guava:guava:18.0'
     testCompile 'junit:junit:4.12'
     apt 'com.google.dagger:dagger-compiler:2.0.1'

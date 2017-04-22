@@ -23,6 +23,7 @@ import com.stelle.stelleapp.R;
 import com.stelle.stelleapp.dbmodels.UserPreferencesData;
 import com.stelle.stelleapp.getstarted.presenters.SplashScreenPresenter;
 import com.stelle.stelleapp.getstarted.interfaces.SplashScreenContract;
+import com.stelle.stelleapp.homescreen.activities.ChatScreenActivity;
 import com.stelle.stelleapp.homescreen.activities.HomeScreenActivity;
 import com.stelle.stelleapp.utils.AppConstants;
 import com.stelle.stelleapp.utils.Utils;
@@ -193,7 +194,7 @@ public class SplashActivity extends LocationRequestActivity implements SplashScr
             public void run() {
 
                 if (!isViewDestroyed()) {
-                    Intent intent = new Intent(SplashActivity.this, HomeScreenActivity.class);
+                    Intent intent = new Intent(SplashActivity.this, ChatScreenActivity.class);
                     intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);
                     startActivity(intent);
                     overridePendingTransition(R.anim.slide_in_left, R.anim.slide_out_left);
